@@ -1,0 +1,3102 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0310.1044                               -->
+<workbook locale='en_US' original-version='18.1' source-build='2023.1.0 (20231.23.0310.1044)' source-platform='win' version='18.1' xml:base='http://localhost:9100' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location derived-from='http://localhost:9100/workbooks/TelecomChurnAnalysis_17372018569250?rev=2.0' id='TelecomChurnAnalysis_17372018569250' path='/workbooks' revision='2.3' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='WA_Fn-UseC_-Telco-Customer-Churn' inline='true' name='federated.0leqkj908lqlbm19m0l2d0ye4kcs' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='WA_Fn-UseC_-Telco-Customer-Churn' name='textscan.19qk55x076cpl016fi29c1fjdmil'>
+            <connection class='textscan' directory='C:/Users/hamza/Desktop/Resume projects Fiverr/Churn Analysis/Data/17pbbbw1wp8eij19qmiv60ds97qk' filename='WA_Fn-UseC_-Telco-Customer-Churn.csv' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.19qk55x076cpl016fi29c1fjdmil' name='WA_Fn-UseC_-Telco-Customer-Churn.csv' table='[WA_Fn-UseC_-Telco-Customer-Churn#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='customerID' ordinal='0' />
+            <column datatype='string' name='gender' ordinal='1' />
+            <column datatype='integer' name='SeniorCitizen' ordinal='2' />
+            <column datatype='string' name='Partner' ordinal='3' />
+            <column datatype='string' name='Dependents' ordinal='4' />
+            <column datatype='integer' name='tenure' ordinal='5' />
+            <column datatype='string' name='PhoneService' ordinal='6' />
+            <column datatype='string' name='MultipleLines' ordinal='7' />
+            <column datatype='string' name='InternetService' ordinal='8' />
+            <column datatype='string' name='OnlineSecurity' ordinal='9' />
+            <column datatype='string' name='OnlineBackup' ordinal='10' />
+            <column datatype='string' name='DeviceProtection' ordinal='11' />
+            <column datatype='string' name='TechSupport' ordinal='12' />
+            <column datatype='string' name='StreamingTV' ordinal='13' />
+            <column datatype='string' name='StreamingMovies' ordinal='14' />
+            <column datatype='string' name='Contract' ordinal='15' />
+            <column datatype='string' name='PaperlessBilling' ordinal='16' />
+            <column datatype='string' name='PaymentMethod' ordinal='17' />
+            <column datatype='real' name='MonthlyCharges' ordinal='18' />
+            <column datatype='real' name='TotalCharges' ordinal='19' />
+            <column datatype='string' name='Churn' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.19qk55x076cpl016fi29c1fjdmil' name='WA_Fn-UseC_-Telco-Customer-Churn.csv' table='[WA_Fn-UseC_-Telco-Customer-Churn#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='customerID' ordinal='0' />
+            <column datatype='string' name='gender' ordinal='1' />
+            <column datatype='integer' name='SeniorCitizen' ordinal='2' />
+            <column datatype='string' name='Partner' ordinal='3' />
+            <column datatype='string' name='Dependents' ordinal='4' />
+            <column datatype='integer' name='tenure' ordinal='5' />
+            <column datatype='string' name='PhoneService' ordinal='6' />
+            <column datatype='string' name='MultipleLines' ordinal='7' />
+            <column datatype='string' name='InternetService' ordinal='8' />
+            <column datatype='string' name='OnlineSecurity' ordinal='9' />
+            <column datatype='string' name='OnlineBackup' ordinal='10' />
+            <column datatype='string' name='DeviceProtection' ordinal='11' />
+            <column datatype='string' name='TechSupport' ordinal='12' />
+            <column datatype='string' name='StreamingTV' ordinal='13' />
+            <column datatype='string' name='StreamingMovies' ordinal='14' />
+            <column datatype='string' name='Contract' ordinal='15' />
+            <column datatype='string' name='PaperlessBilling' ordinal='16' />
+            <column datatype='string' name='PaymentMethod' ordinal='17' />
+            <column datatype='real' name='MonthlyCharges' ordinal='18' />
+            <column datatype='real' name='TotalCharges' ordinal='19' />
+            <column datatype='string' name='Churn' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Churn.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customerID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customerID]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Churn.csv]</parent-name>
+            <remote-alias>customerID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Churn.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SeniorCitizen</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SeniorCitizen]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Churn.csv]</parent-name>
+            <remote-alias>SeniorCitizen</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Partner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Partner]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Churn.csv]</parent-name>
+            <remote-alias>Partner</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dependents</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Dependents]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Churn.csv]</parent-name>
+            <remote-alias>Dependents</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tenure</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tenure]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Churn.csv]</parent-name>
+            <remote-alias>tenure</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PhoneService</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PhoneService]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Churn.csv]</parent-name>
+            <remote-alias>PhoneService</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MultipleLines</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MultipleLines]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Churn.csv]</parent-name>
+            <remote-alias>MultipleLines</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InternetService</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[InternetService]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Churn.csv]</parent-name>
+            <remote-alias>InternetService</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OnlineSecurity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OnlineSecurity]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Churn.csv]</parent-name>
+            <remote-alias>OnlineSecurity</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OnlineBackup</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OnlineBackup]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Churn.csv]</parent-name>
+            <remote-alias>OnlineBackup</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DeviceProtection</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DeviceProtection]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Churn.csv]</parent-name>
+            <remote-alias>DeviceProtection</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TechSupport</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TechSupport]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Churn.csv]</parent-name>
+            <remote-alias>TechSupport</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StreamingTV</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[StreamingTV]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Churn.csv]</parent-name>
+            <remote-alias>StreamingTV</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StreamingMovies</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[StreamingMovies]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Churn.csv]</parent-name>
+            <remote-alias>StreamingMovies</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Contract</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Contract]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Churn.csv]</parent-name>
+            <remote-alias>Contract</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PaperlessBilling</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PaperlessBilling]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Churn.csv]</parent-name>
+            <remote-alias>PaperlessBilling</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PaymentMethod</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PaymentMethod]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Churn.csv]</parent-name>
+            <remote-alias>PaymentMethod</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MonthlyCharges</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MonthlyCharges]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Churn.csv]</parent-name>
+            <remote-alias>MonthlyCharges</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalCharges</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalCharges]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Churn.csv]</parent-name>
+            <remote-alias>TotalCharges</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Churn</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Churn]</local-name>
+            <parent-name>[WA_Fn-UseC_-Telco-Customer-Churn.csv]</parent-name>
+            <remote-alias>Churn</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Is_Churn' datatype='integer' name='[Calculation_1055569172209667]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Churn]=&quot;Yes&quot; then 1&#10;Else 0&#10;end' />
+      </column>
+      <column caption='Churn Percentage' datatype='real' name='[Calculation_1055569172676612]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF [Churn] = &apos;Yes&apos; THEN 1 ELSE 0 END) / COUNT([customerID]) * 100' />
+      </column>
+      <column caption='Churn Category' datatype='string' name='[Calculation_1055569177153541]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Churn]=&quot;Yes&quot; Then &quot;Churned&quot;&#10;Else &quot;Retained&quot;&#10;end' />
+      </column>
+      <column caption='Churn Rate' datatype='real' name='[Calculation_1055569183719430]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF [Churn] = &apos;Yes&apos; THEN 1 ELSE 0 END) / COUNT([customerID]) * 100' />
+      </column>
+      <column caption='Churn Rate for Tenure Group' datatype='string' name='[Calculation_1055569187139591]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [tenure] &lt; 12 THEN &apos;Less than 12 months&apos; ELSE &apos;12+ months&apos; END' />
+      </column>
+      <column caption='ChurnUnder12Months' datatype='integer' name='[Calculation_14214524361576643]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [tenure] &lt; 12 AND [Churn] = &apos;Yes&apos; THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='TotalCustomersUnder12Months' datatype='integer' name='[Calculation_14214524361715908]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [tenure] &lt; 12 THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='ChurnRateUnder12Months' datatype='real' name='[Calculation_14214524361793733]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Calculation_14214524361576643]) / SUM([Calculation_14214524361715908]) * 100' />
+      </column>
+      <column datatype='string' name='[Churn]' role='dimension' type='nominal' />
+      <column caption='Device Protection' datatype='string' name='[DeviceProtection]' role='dimension' type='nominal' />
+      <column caption='Internet Service' datatype='string' name='[InternetService]' role='dimension' type='nominal' />
+      <column caption='Monthly Charges' datatype='real' name='[MonthlyCharges]' role='measure' type='quantitative' />
+      <column caption='Multiple Lines' datatype='string' name='[MultipleLines]' role='dimension' type='nominal' />
+      <column caption='Online Backup' datatype='string' name='[OnlineBackup]' role='dimension' type='nominal' />
+      <column caption='Online Security' datatype='string' name='[OnlineSecurity]' role='dimension' type='nominal' />
+      <column caption='Paperless Billing' datatype='string' name='[PaperlessBilling]' role='dimension' type='nominal' />
+      <column caption='Payment Method' datatype='string' name='[PaymentMethod]' role='dimension' type='nominal' />
+      <column caption='Phone Service' datatype='string' name='[PhoneService]' role='dimension' type='nominal' />
+      <column caption='Senior Citizen' datatype='integer' name='[SeniorCitizen]' role='measure' type='quantitative' />
+      <column caption='Streaming Movies' datatype='string' name='[StreamingMovies]' role='dimension' type='nominal' />
+      <column caption='Streaming TV' datatype='string' name='[StreamingTV]' role='dimension' type='nominal' />
+      <column caption='Tech Support' datatype='string' name='[TechSupport]' role='dimension' type='nominal' />
+      <column aggregation='None' datatype='integer' name='[Tenure (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[tenure]' peg='0' size='4.95' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Total Charges (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='2' formula='[TotalCharges]' peg='0' size='185' />
+      </column>
+      <column caption='Total Charges' datatype='real' name='[TotalCharges]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='WA_Fn-UseC_-Telco-Customer-Churn.csv' datatype='table' name='[__tableau_internal_object_id__].[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]' role='measure' type='quantitative' />
+      <column caption='Customer ID' datatype='string' name='[customerID]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Tenure' datatype='integer' name='[tenure]' role='measure' type='quantitative' />
+      <column-instance column='[tenure]' derivation='Avg' name='[avg:tenure:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1055569177153541]' derivation='None' name='[none:Calculation_1055569177153541:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Churn]' derivation='None' name='[none:Churn:nk]' pivot='key' type='nominal' />
+      <column-instance column='[SeniorCitizen]' derivation='None' name='[none:SeniorCitizen:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[TotalCharges]' derivation='Sum' name='[sum:TotalCharges:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[tenure]' derivation='Sum' name='[sum:tenure:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1055569183719430]' derivation='User' name='[usr:Calculation_1055569183719430:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Churn Category,Senior Citizen,Gender)' hidden='true' name='[Action (Churn Category,Senior Citizen,Gender)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_1055569177153541]' />
+          <groupfilter function='level-members' level='[none:SeniorCitizen:ok]' />
+          <groupfilter function='level-members' level='[gender]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/hamza/Desktop/Resume projects Fiverr/Churn Analysis/Data/Extracts/federated_0leqkj908lqlbm19m0l2d0.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='01/18/2025 11:28:16 AM' username=''>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='WA_Fn-UseC_-Telco-Customer-Churn' increment-value='%null%' refresh-type='create' rows-inserted='7043' timestamp-start='2025-01-18 11:28:16.249' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>customerID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customerID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customerID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Churn.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7043</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>1</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Churn.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SeniorCitizen</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SeniorCitizen]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SeniorCitizen</remote-alias>
+              <ordinal>2</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Churn.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Partner</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Partner]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Partner</remote-alias>
+              <ordinal>3</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Churn.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Dependents</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Dependents]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Dependents</remote-alias>
+              <ordinal>4</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Churn.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tenure</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[tenure]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tenure</remote-alias>
+              <ordinal>5</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Churn.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>73</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PhoneService</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PhoneService]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PhoneService</remote-alias>
+              <ordinal>6</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Churn.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MultipleLines</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[MultipleLines]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MultipleLines</remote-alias>
+              <ordinal>7</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Churn.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>InternetService</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[InternetService]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>InternetService</remote-alias>
+              <ordinal>8</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Churn.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OnlineSecurity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[OnlineSecurity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OnlineSecurity</remote-alias>
+              <ordinal>9</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Churn.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OnlineBackup</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[OnlineBackup]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OnlineBackup</remote-alias>
+              <ordinal>10</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Churn.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DeviceProtection</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DeviceProtection]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DeviceProtection</remote-alias>
+              <ordinal>11</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Churn.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TechSupport</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[TechSupport]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TechSupport</remote-alias>
+              <ordinal>12</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Churn.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>StreamingTV</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[StreamingTV]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>StreamingTV</remote-alias>
+              <ordinal>13</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Churn.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>StreamingMovies</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[StreamingMovies]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>StreamingMovies</remote-alias>
+              <ordinal>14</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Churn.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Contract</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Contract]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Contract</remote-alias>
+              <ordinal>15</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Churn.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PaperlessBilling</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PaperlessBilling]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PaperlessBilling</remote-alias>
+              <ordinal>16</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Churn.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PaymentMethod</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PaymentMethod]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PaymentMethod</remote-alias>
+              <ordinal>17</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Churn.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MonthlyCharges</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MonthlyCharges]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MonthlyCharges</remote-alias>
+              <ordinal>18</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Churn.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1482</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalCharges</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TotalCharges]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalCharges</remote-alias>
+              <ordinal>19</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Churn.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4280</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Churn</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Churn]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Churn</remote-alias>
+              <ordinal>20</ordinal>
+              <family>WA_Fn-UseC_-Telco-Customer-Churn.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Churn:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;No&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Yes&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[avg:tenure:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[sum:tenure:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[usr:Calculation_1055569183719430:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[sum:TotalCharges:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_1055569177153541:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Retained&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Churned&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='WA_Fn-UseC_-Telco-Customer-Churn.csv' id='WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E'>
+            <properties context=''>
+              <relation connection='textscan.19qk55x076cpl016fi29c1fjdmil' name='WA_Fn-UseC_-Telco-Customer-Churn.csv' table='[WA_Fn-UseC_-Telco-Customer-Churn#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='customerID' ordinal='0' />
+                  <column datatype='string' name='gender' ordinal='1' />
+                  <column datatype='integer' name='SeniorCitizen' ordinal='2' />
+                  <column datatype='string' name='Partner' ordinal='3' />
+                  <column datatype='string' name='Dependents' ordinal='4' />
+                  <column datatype='integer' name='tenure' ordinal='5' />
+                  <column datatype='string' name='PhoneService' ordinal='6' />
+                  <column datatype='string' name='MultipleLines' ordinal='7' />
+                  <column datatype='string' name='InternetService' ordinal='8' />
+                  <column datatype='string' name='OnlineSecurity' ordinal='9' />
+                  <column datatype='string' name='OnlineBackup' ordinal='10' />
+                  <column datatype='string' name='DeviceProtection' ordinal='11' />
+                  <column datatype='string' name='TechSupport' ordinal='12' />
+                  <column datatype='string' name='StreamingTV' ordinal='13' />
+                  <column datatype='string' name='StreamingMovies' ordinal='14' />
+                  <column datatype='string' name='Contract' ordinal='15' />
+                  <column datatype='string' name='PaperlessBilling' ordinal='16' />
+                  <column datatype='string' name='PaymentMethod' ordinal='17' />
+                  <column datatype='real' name='MonthlyCharges' ordinal='18' />
+                  <column datatype='real' name='TotalCharges' ordinal='19' />
+                  <column datatype='string' name='Churn' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.0leqkj908lqlbm19m0l2d0ye4kcs'>
+      <datasources>
+        <datasource caption='WA_Fn-UseC_-Telco-Customer-Churn' name='federated.0leqkj908lqlbm19m0l2d0ye4kcs' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0leqkj908lqlbm19m0l2d0ye4kcs'>
+        <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+        <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Contract:nk]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:Contract:nk]' member='&quot;Month-to-month&quot;' />
+          <groupfilter function='member' level='[none:Contract:nk]' member='&quot;One year&quot;' />
+          <groupfilter function='member' level='[none:Contract:nk]' member='&quot;Two year&quot;' />
+        </groupfilter>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Average Tenure'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#f17b79' fontname='Times New Roman'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='http://localhost:9100/workbooks/TelecomChurnAnalysis_17372018569250/AverageTenure?rev=' id='AverageTenure' path='/workbooks/TelecomChurnAnalysis_17372018569250' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WA_Fn-UseC_-Telco-Customer-Churn' name='federated.0leqkj908lqlbm19m0l2d0ye4kcs' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0leqkj908lqlbm19m0l2d0ye4kcs'>
+            <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+            <column-instance column='[tenure]' derivation='Avg' name='[avg:tenure:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+            <column caption='Tenure' datatype='integer' name='[tenure]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Contract:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[avg:tenure:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='1' fontsize='14'><![CDATA[<[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[avg:tenure:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{A2FFF38C-FA20-41AC-B862-6608AC25C34D}' />
+    </worksheet>
+    <worksheet name='Churn Count Contract Wise'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#a0cbe8' fontname='Raleway' fontsize='24'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='http://localhost:9100/workbooks/TelecomChurnAnalysis_17372018569250/ChurnCountContractWise?rev=' id='ChurnCountContractWise' path='/workbooks/TelecomChurnAnalysis_17372018569250' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WA_Fn-UseC_-Telco-Customer-Churn' name='federated.0leqkj908lqlbm19m0l2d0ye4kcs' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0leqkj908lqlbm19m0l2d0ye4kcs'>
+            <column caption='Churn Category' datatype='string' name='[Calculation_1055569177153541]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Churn]=&quot;Yes&quot; Then &quot;Churned&quot;&#10;Else &quot;Retained&quot;&#10;end' />
+            </column>
+            <column datatype='string' name='[Churn]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='WA_Fn-UseC_-Telco-Customer-Churn.csv' datatype='integer' name='[__tableau_internal_object_id__].[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='WA_Fn-UseC_-Telco-Customer-Churn.csv' datatype='table' name='[__tableau_internal_object_id__].[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1055569177153541]' derivation='None' name='[none:Calculation_1055569177153541:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Contract:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[__tableau_internal_object_id__].[cnt:WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E:qk]' scope='rows' value='Count of Churn' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Contract:nk]' value='161' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Contract:nk]' value='Contract'>
+              <formatted-text>
+                <run bold='true' fontcolor='#4e79a7' fontname='Raleway' fontsize='11'>Contract</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Calculation_1055569177153541:nk]' />
+              <text column='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[__tableau_internal_object_id__].[cnt:WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[__tableau_internal_object_id__].[cnt:WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E:qk]</rows>
+        <cols>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Contract:nk]</cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true'>Churn is higher among month-to-month contracts.</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Contract:nk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[__tableau_internal_object_id__].[cnt:WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[__tableau_internal_object_id__].[cnt:WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E:qk]</field>
+                      <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Calculation_1055569177153541:nk]</field>
+                      <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Contract:nk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>1655</value>
+                    <value>&quot;Churned&quot;</value>
+                    <value>&quot;Month-to-month&quot;</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{DEF64A9D-9029-43BF-98A8-53CCB0E04F6E}' />
+    </worksheet>
+    <worksheet name='Churn Count for Each Payment Method and Contract Wise'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#a0cbe8' fontname='Raleway' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='http://localhost:9100/workbooks/TelecomChurnAnalysis_17372018569250/ChurnCountforEachPaymentMethod?rev=' id='ChurnCountforEachPaymentMethod' path='/workbooks/TelecomChurnAnalysis_17372018569250' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WA_Fn-UseC_-Telco-Customer-Churn' name='federated.0leqkj908lqlbm19m0l2d0ye4kcs' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0leqkj908lqlbm19m0l2d0ye4kcs'>
+            <column caption='Churn Category' datatype='string' name='[Calculation_1055569177153541]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Churn]=&quot;Yes&quot; Then &quot;Churned&quot;&#10;Else &quot;Retained&quot;&#10;end' />
+            </column>
+            <column datatype='string' name='[Churn]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='WA_Fn-UseC_-Telco-Customer-Churn.csv' datatype='integer' name='[__tableau_internal_object_id__].[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]' role='measure' type='quantitative' />
+            <column caption='Payment Method' datatype='string' name='[PaymentMethod]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='WA_Fn-UseC_-Telco-Customer-Churn.csv' datatype='table' name='[__tableau_internal_object_id__].[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1055569177153541]' derivation='None' name='[none:Calculation_1055569177153541:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+            <column-instance column='[PaymentMethod]' derivation='None' name='[none:PaymentMethod:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:PaymentMethod:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:PaymentMethod:nk]' member='&quot;Bank transfer (automatic)&quot;' />
+              <groupfilter function='member' level='[none:PaymentMethod:nk]' member='&quot;Credit card (automatic)&quot;' />
+              <groupfilter function='member' level='[none:PaymentMethod:nk]' member='&quot;Electronic check&quot;' />
+              <groupfilter function='member' level='[none:PaymentMethod:nk]' member='&quot;Mailed check&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Contract:nk]</column>
+            <column>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:PaymentMethod:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[__tableau_internal_object_id__].[cnt:WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E:qk]' scope='rows' value='Count of Churn' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:PaymentMethod:nk]' value='112' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Calculation_1055569177153541:nk]' value='Churn Category'>
+              <formatted-text>
+                <run bold='true' fontcolor='#75a1c7' fontname='Raleway'>Churn Category</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:PaymentMethod:nk]' value='Payment Method'>
+              <formatted-text>
+                <run bold='true' fontcolor='#4e79a7' fontname='Raleway' fontsize='11'>Payment Method</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Contract:nk]' value='Contract'>
+              <formatted-text>
+                <run bold='true' fontcolor='#4e79a7' fontname='Raleway' fontsize='11'>Contract</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Calculation_1055569177153541:nk]' />
+              <text column='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[__tableau_internal_object_id__].[cnt:WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Churn Category:</run>
+                <run fontcolor='#787878'>Æ&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Calculation_1055569177153541:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Contract:</run>
+                <run fontcolor='#787878'>Æ&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Contract:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Payment Method:</run>
+                <run fontcolor='#787878'>Æ&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:PaymentMethod:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Count of WA_Fn-UseC_-Telco-Customer-Churn.csv:</run>
+                <run fontcolor='#787878'>Æ&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[__tableau_internal_object_id__].[cnt:WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[__tableau_internal_object_id__].[cnt:WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E:qk]</rows>
+        <cols>([federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:PaymentMethod:nk] / [federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Contract:nk])</cols>
+      </table>
+      <simple-id uuid='{AF1D1C59-1F29-47E4-81DE-49423B5BF521}' />
+    </worksheet>
+    <worksheet name='Churn Customers'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#f17b79' fontname='Times New Roman'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='http://localhost:9100/workbooks/TelecomChurnAnalysis_17372018569250/ChurnCustomers?rev=' id='ChurnCustomers' path='/workbooks/TelecomChurnAnalysis_17372018569250' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WA_Fn-UseC_-Telco-Customer-Churn' name='federated.0leqkj908lqlbm19m0l2d0ye4kcs' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0leqkj908lqlbm19m0l2d0ye4kcs'>
+            <column caption='Is_Churn' datatype='integer' name='[Calculation_1055569172209667]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Churn]=&quot;Yes&quot; then 1&#10;Else 0&#10;end' />
+            </column>
+            <column datatype='string' name='[Churn]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+            <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1055569172209667]' derivation='Sum' name='[sum:Calculation_1055569172209667:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Contract:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[sum:Calculation_1055569172209667:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='1' fontsize='14'><![CDATA[<[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[sum:Calculation_1055569172209667:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D4EFA9AF-A6B4-4355-8036-DC31981B2C03}' />
+    </worksheet>
+    <worksheet name='Churn Distribution based on Citizen Type'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#a0cbe8' fontname='Raleway' fontsize='26'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='http://localhost:9100/workbooks/TelecomChurnAnalysis_17372018569250/ChurnDistributionbasedonCitizenType?rev=' id='ChurnDistributionbasedonCitizenType' path='/workbooks/TelecomChurnAnalysis_17372018569250' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WA_Fn-UseC_-Telco-Customer-Churn' name='federated.0leqkj908lqlbm19m0l2d0ye4kcs' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0leqkj908lqlbm19m0l2d0ye4kcs'>
+            <column caption='Churn Category' datatype='string' name='[Calculation_1055569177153541]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Churn]=&quot;Yes&quot; Then &quot;Churned&quot;&#10;Else &quot;Retained&quot;&#10;end' />
+            </column>
+            <column datatype='string' name='[Churn]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='WA_Fn-UseC_-Telco-Customer-Churn.csv' datatype='integer' name='[__tableau_internal_object_id__].[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]' role='measure' type='quantitative' />
+            <column caption='Senior Citizen' datatype='integer' name='[SeniorCitizen]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='WA_Fn-UseC_-Telco-Customer-Churn.csv' datatype='table' name='[__tableau_internal_object_id__].[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E:qk]' pivot='key' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1055569177153541]' derivation='None' name='[none:Calculation_1055569177153541:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SeniorCitizen]' derivation='None' name='[none:SeniorCitizen:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:SeniorCitizen:ok]' direction='ASC' using='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[__tableau_internal_object_id__].[cnt:WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E:qk]' />
+          <slices>
+            <column>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Contract:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[__tableau_internal_object_id__].[cnt:WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E:qk]' scope='rows' value='Count of Churn' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:gender:nk]' value='112' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Calculation_1055569177153541:nk]' />
+              <text column='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Calculation_1055569177153541:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[__tableau_internal_object_id__].[cnt:WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E:qk]</rows>
+        <cols>([federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:SeniorCitizen:ok] / [federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:gender:nk])</cols>
+        <annotations>
+          <annotation class='area' id='0' text-pinx='0.5' text-piny='0.5' text-width-delta='-18'>
+            <formatted-text>
+              <run bold='true'>Senior citizens show higher churn rates compared to non-senior customers.</run>
+            </formatted-text>
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord cell-offset='0.125'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:SeniorCitizen:ok]</field>
+                      <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:gender:nk]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>1</bucket>
+                      <bucket>&quot;Female&quot;</bucket>
+                    </multibucket>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='2507.8771498771498'>
+                  <node-reference>
+                    <axis>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[__tableau_internal_object_id__].[cnt:WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord cell-offset='0.491071'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:SeniorCitizen:ok]</field>
+                      <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:gender:nk]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>1</bucket>
+                      <bucket>&quot;Male&quot;</bucket>
+                    </multibucket>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='1423.1818181818182'>
+                  <node-reference>
+                    <axis>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[__tableau_internal_object_id__].[cnt:WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.5' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{18073259-7940-4625-883C-50964D9E21F8}' />
+    </worksheet>
+    <worksheet name='Churn Percentage'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#f17b79' fontname='Times New Roman'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='http://localhost:9100/workbooks/TelecomChurnAnalysis_17372018569250/ChurnPercentage?rev=' id='ChurnPercentage' path='/workbooks/TelecomChurnAnalysis_17372018569250' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WA_Fn-UseC_-Telco-Customer-Churn' name='federated.0leqkj908lqlbm19m0l2d0ye4kcs' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0leqkj908lqlbm19m0l2d0ye4kcs'>
+            <column caption='Churn Percentage' datatype='real' name='[Calculation_1055569172676612]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [Churn] = &apos;Yes&apos; THEN 1 ELSE 0 END) / COUNT([customerID]) * 100' />
+            </column>
+            <column datatype='string' name='[Churn]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+            <column caption='Customer ID' datatype='string' name='[customerID]' role='dimension' type='nominal' />
+            <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1055569172676612]' derivation='User' name='[usr:Calculation_1055569172676612:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Contract:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[usr:Calculation_1055569172676612:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='1' fontsize='14'><![CDATA[<[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[usr:Calculation_1055569172676612:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5231E9B1-D3F6-4AE4-B498-84CF7776758F}' />
+    </worksheet>
+    <worksheet name='Cohort Comparison of Churn and Payment Method'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#a0cbe8' fontname='Raleway' fontsize='24'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='http://localhost:9100/workbooks/TelecomChurnAnalysis_17372018569250/CohortComparisonofChurnandPaymentMethod2?rev=' id='CohortComparisonofChurnandPaymentMethod2' path='/workbooks/TelecomChurnAnalysis_17372018569250' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WA_Fn-UseC_-Telco-Customer-Churn' name='federated.0leqkj908lqlbm19m0l2d0ye4kcs' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0leqkj908lqlbm19m0l2d0ye4kcs'>
+            <column caption='Churn Rate' datatype='real' name='[Calculation_1055569183719430]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [Churn] = &apos;Yes&apos; THEN 1 ELSE 0 END) / COUNT([customerID]) * 100' />
+            </column>
+            <column datatype='string' name='[Churn]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+            <column caption='Payment Method' datatype='string' name='[PaymentMethod]' role='dimension' type='nominal' />
+            <column caption='Total Charges' datatype='real' name='[TotalCharges]' role='measure' type='quantitative' />
+            <column caption='Customer ID' datatype='string' name='[customerID]' role='dimension' type='nominal' />
+            <column-instance column='[Churn]' derivation='None' name='[none:Churn:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+            <column-instance column='[PaymentMethod]' derivation='None' name='[none:PaymentMethod:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TotalCharges]' derivation='Sum' name='[sum:TotalCharges:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tenure]' derivation='Sum' name='[sum:tenure:qk]' pivot='key' type='quantitative' />
+            <column caption='Tenure' datatype='integer' name='[tenure]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1055569183719430]' derivation='User' name='[usr:Calculation_1055569183719430:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Contract:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[sum:tenure:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:PaymentMethod:nk]' value='75' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[:Measure Names]' />
+              <tooltip column='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[usr:Calculation_1055569183719430:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run>This payment method has a churn rate of </run>
+                <run><![CDATA[<[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[usr:Calculation_1055569183719430:qk]>]]></run>
+                <run>%</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[sum:TotalCharges:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[:Measure Names]' />
+              <tooltip column='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[usr:Calculation_1055569183719430:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run>This payment method has a churn rate of </run>
+                <run><![CDATA[<[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[usr:Calculation_1055569183719430:qk]>]]></run>
+                <run>%</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[sum:tenure:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[:Measure Names]' />
+              <tooltip column='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[usr:Calculation_1055569183719430:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run>This payment method has a churn rate of </run>
+                <run><![CDATA[<[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[usr:Calculation_1055569183719430:qk]>]]></run>
+                <run>%</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>([federated.0leqkj908lqlbm19m0l2d0ye4kcs].[sum:TotalCharges:qk] + [federated.0leqkj908lqlbm19m0l2d0ye4kcs].[sum:tenure:qk])</rows>
+        <cols>([federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Churn:nk] / [federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:PaymentMethod:nk])</cols>
+      </table>
+      <simple-id uuid='{668A9562-BCB7-426A-B670-CAC5009840B0}' />
+    </worksheet>
+    <worksheet name='Distribution of Tenure Churn Wise'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#a0cbe8' fontname='Raleway' fontsize='26'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='http://localhost:9100/workbooks/TelecomChurnAnalysis_17372018569250/DistributionofTenureChurnWise?rev=' id='DistributionofTenureChurnWise' path='/workbooks/TelecomChurnAnalysis_17372018569250' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WA_Fn-UseC_-Telco-Customer-Churn' name='federated.0leqkj908lqlbm19m0l2d0ye4kcs' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0leqkj908lqlbm19m0l2d0ye4kcs'>
+            <column caption='Churn Category' datatype='string' name='[Calculation_1055569177153541]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Churn]=&quot;Yes&quot; Then &quot;Churned&quot;&#10;Else &quot;Retained&quot;&#10;end' />
+            </column>
+            <column caption='ChurnUnder12Months' datatype='integer' name='[Calculation_14214524361576643]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [tenure] &lt; 12 AND [Churn] = &apos;Yes&apos; THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='TotalCustomersUnder12Months' datatype='integer' name='[Calculation_14214524361715908]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [tenure] &lt; 12 THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='ChurnRateUnder12Months' datatype='real' name='[Calculation_14214524361793733]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Calculation_14214524361576643]) / SUM([Calculation_14214524361715908]) * 100' />
+            </column>
+            <column datatype='string' name='[Churn]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+            <column aggregation='None' datatype='integer' name='[Tenure (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[tenure]' peg='0' size='4.95' />
+            </column>
+            <column-instance column='[tenure]' derivation='Count' name='[cnt:tenure:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1055569177153541]' derivation='None' name='[none:Calculation_1055569177153541:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Tenure (bin)]' derivation='None' name='[none:Tenure (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_14214524361793733]' derivation='User' name='[pcto:usr:Calculation_14214524361793733:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Tenure' datatype='integer' name='[tenure]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Contract:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Tenure (bin):qk]' scope='cols' value='Tenure (Months)' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Calculation_1055569177153541:nk]' />
+              <tooltip column='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[pcto:usr:Calculation_14214524361793733:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run>Customers with less than 12 months of tenure contribute </run>
+                <run><![CDATA[<[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[pcto:usr:Calculation_14214524361793733:qk]>]]></run>
+                <run>% of churn.</run>
+                <run>Æ&#10;</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[cnt:tenure:qk]</rows>
+        <cols>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Tenure (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[Tenure (bin)]</column>
+        </show-full-range>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true'>High churn rate among customers with less than 6 months of tenure.</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Tenure (bin):qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[cnt:tenure:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[cnt:tenure:qk]</field>
+                      <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Calculation_1055569177153541:nk]</field>
+                      <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Tenure (bin):qk]</field>
+                      <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[pcto:usr:Calculation_14214524361793733:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>680</value>
+                    <value>&quot;Churned&quot;</value>
+                    <value>0</value>
+                    <value>2.0710710710710711</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{FD72F887-AFE9-4905-B760-5464F880CDF5}' />
+    </worksheet>
+    <worksheet name='Distribution of Total Charges Churn Wise'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#a0cbe8' fontname='Raleway' fontsize='26'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='http://localhost:9100/workbooks/TelecomChurnAnalysis_17372018569250/DistributionofTotalChargesChurnWise?rev=' id='DistributionofTotalChargesChurnWise' path='/workbooks/TelecomChurnAnalysis_17372018569250' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WA_Fn-UseC_-Telco-Customer-Churn' name='federated.0leqkj908lqlbm19m0l2d0ye4kcs' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0leqkj908lqlbm19m0l2d0ye4kcs'>
+            <column caption='Churn Category' datatype='string' name='[Calculation_1055569177153541]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Churn]=&quot;Yes&quot; Then &quot;Churned&quot;&#10;Else &quot;Retained&quot;&#10;end' />
+            </column>
+            <column datatype='string' name='[Churn]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+            <column aggregation='None' datatype='integer' name='[Total Charges (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='2' formula='[TotalCharges]' peg='0' size='185' />
+            </column>
+            <column caption='Total Charges' datatype='real' name='[TotalCharges]' role='measure' type='quantitative' />
+            <column-instance column='[TotalCharges]' derivation='Count' name='[cnt:TotalCharges:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1055569177153541]' derivation='None' name='[none:Calculation_1055569177153541:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Charges (bin)]' derivation='None' name='[none:Total Charges (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Contract:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Calculation_1055569177153541:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[cnt:TotalCharges:qk]</rows>
+        <cols>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Total Charges (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[Total Charges (bin)]</column>
+        </show-full-range>
+        <annotations>
+          <annotation class='area' id='0' text-pinx='0.5' text-piny='0.5' text-width-delta='-18'>
+            <formatted-text>
+              <run bold='true'>Low-paying customers churn more frequently.</run>
+            </formatted-text>
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='262.66145833333331'>
+                  <node-reference>
+                    <axis>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Total Charges (bin):qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='1114.2082324455207'>
+                  <node-reference>
+                    <axis>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[cnt:TotalCharges:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='1820.5156250000002'>
+                  <node-reference>
+                    <axis>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Total Charges (bin):qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='878.731234866828'>
+                  <node-reference>
+                    <axis>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[cnt:TotalCharges:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.5' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{FB892F12-992B-410F-BC47-00A461EEF557}' />
+    </worksheet>
+    <worksheet name='Heatmap for Payment Methods and Contracts'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#a0cbe8' fontname='Raleway' fontsize='24'>Heatmap for Payment Methods and Contracts</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='http://localhost:9100/workbooks/TelecomChurnAnalysis_17372018569250/Sheet12?rev=' id='Sheet12' path='/workbooks/TelecomChurnAnalysis_17372018569250' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WA_Fn-UseC_-Telco-Customer-Churn' name='federated.0leqkj908lqlbm19m0l2d0ye4kcs' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0leqkj908lqlbm19m0l2d0ye4kcs'>
+            <column caption='Churn Rate' datatype='real' name='[Calculation_1055569183719430]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [Churn] = &apos;Yes&apos; THEN 1 ELSE 0 END) / COUNT([customerID]) * 100' />
+            </column>
+            <column datatype='string' name='[Churn]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+            <column caption='Payment Method' datatype='string' name='[PaymentMethod]' role='dimension' type='nominal' />
+            <column caption='Customer ID' datatype='string' name='[customerID]' role='dimension' type='nominal' />
+            <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+            <column-instance column='[PaymentMethod]' derivation='None' name='[none:PaymentMethod:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1055569183719430]' derivation='User' name='[usr:Calculation_1055569183719430:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Contract:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:PaymentMethod:nk]' value='130' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[usr:Calculation_1055569183719430:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[usr:Calculation_1055569183719430:qk]' />
+              <text column='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[usr:Calculation_1055569183719430:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Contract:nk]</rows>
+        <cols>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:PaymentMethod:nk]</cols>
+      </table>
+      <simple-id uuid='{EDFEC068-ECA3-42B3-872D-FCAF69566151}' />
+    </worksheet>
+    <worksheet name='Relationship between Total Charges and Tenure'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#a0cbe8' fontname='Raleway' fontsize='26'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='http://localhost:9100/workbooks/TelecomChurnAnalysis_17372018569250/RelationshipbetweenTotalChargesandTenure?rev=' id='RelationshipbetweenTotalChargesandTenure' path='/workbooks/TelecomChurnAnalysis_17372018569250' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WA_Fn-UseC_-Telco-Customer-Churn' name='federated.0leqkj908lqlbm19m0l2d0ye4kcs' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0leqkj908lqlbm19m0l2d0ye4kcs'>
+            <column caption='Churn Category' datatype='string' name='[Calculation_1055569177153541]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Churn]=&quot;Yes&quot; Then &quot;Churned&quot;&#10;Else &quot;Retained&quot;&#10;end' />
+            </column>
+            <column datatype='string' name='[Churn]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+            <column caption='Total Charges' datatype='real' name='[TotalCharges]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1055569177153541]' derivation='None' name='[none:Calculation_1055569177153541:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TotalCharges]' derivation='Sum' name='[sum:TotalCharges:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tenure]' derivation='Sum' name='[sum:tenure:qk]' pivot='key' type='quantitative' />
+            <column caption='Tenure' datatype='integer' name='[tenure]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Contract:nk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Calculation_1055569177153541:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[sum:tenure:qk]</rows>
+        <cols>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[sum:TotalCharges:qk]</cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true'>Customers with longer tenure tend to have higher total charges.</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[sum:TotalCharges:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[sum:tenure:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Calculation_1055569177153541:nk]</field>
+                      <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[sum:TotalCharges:qk]</field>
+                      <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[sum:tenure:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Retained&quot;</value>
+                    <value>8477.6000000000004</value>
+                    <value>71</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{DEED74B3-0CC0-4A36-8DD4-32F35E4A3678}' />
+    </worksheet>
+    <worksheet name='Total Customers'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#f17b79' fontname='Times New Roman'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='http://localhost:9100/workbooks/TelecomChurnAnalysis_17372018569250/TotalCustomers?rev=' id='TotalCustomers' path='/workbooks/TelecomChurnAnalysis_17372018569250' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WA_Fn-UseC_-Telco-Customer-Churn' name='federated.0leqkj908lqlbm19m0l2d0ye4kcs' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0leqkj908lqlbm19m0l2d0ye4kcs'>
+            <_.fcp.ObjectModelTableType.false...column caption='WA_Fn-UseC_-Telco-Customer-Churn.csv' datatype='integer' name='[__tableau_internal_object_id__].[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='WA_Fn-UseC_-Telco-Customer-Churn.csv' datatype='table' name='[__tableau_internal_object_id__].[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Contract:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[__tableau_internal_object_id__].[cnt:WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='1' fontsize='14'><![CDATA[<[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[__tableau_internal_object_id__].[cnt:WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E150086A-BE1D-4303-858E-D6702CC72C48}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Telecom Churn  Analysis: Insights and Trends'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontname='Raleway' fontsize='28'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='http://localhost:9100/workbooks/TelecomChurnAnalysis_17372018569250/ChurnAnalysisDashboard?rev=' id='ChurnAnalysisDashboard' path='/workbooks/TelecomChurnAnalysis_17372018569250' revision='' />
+      <style />
+      <size maxheight='2000' maxwidth='1400' minheight='2000' minwidth='1400' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='WA_Fn-UseC_-Telco-Customer-Churn' name='federated.0leqkj908lqlbm19m0l2d0ye4kcs' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0leqkj908lqlbm19m0l2d0ye4kcs'>
+        <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+        <column caption='Payment Method' datatype='string' name='[PaymentMethod]' role='dimension' type='nominal' />
+        <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+        <column-instance column='[PaymentMethod]' derivation='None' name='[none:PaymentMethod:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='96600' id='41' param='horz' type-v2='layout-flow' w='98858' x='571' y='3000'>
+            <zone h='96600' id='48' is-fixed='true' type-v2='layout-basic' w='98858' x='571' y='3000'>
+              <zone forceUpdate='true' h='96600' id='74' type-v2='text' w='98858' x='571' y='3000'>
+                <formatted-text>
+                  <run fontcolor='#76b7b2' fontname='Oswald' fontsize='22'>Drivers of Churn</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='2600' id='7' type-v2='title' w='98858' x='571' y='400'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='2050' id='31' name='Total Customers' show-title='false' w='4643' x='3214' y='8000' />
+        <zone forceUpdate='true' h='2250' id='32' type-v2='text' w='9286' x='2357' y='5950'>
+          <formatted-text>
+            <run bold='true' fontcolor='#75a1c7' fontname='Raleway' fontsize='12'>Total Customers</run>
+          </formatted-text>
+        </zone>
+        <zone h='2050' id='33' name='Churn Customers' show-title='false' w='5357' x='22071' y='8000' />
+        <zone forceUpdate='true' h='2050' id='34' type-v2='text' w='10500' x='21071' y='5950'>
+          <formatted-text>
+            <run bold='true' fontcolor='#75a1c7' fontname='Raleway' fontsize='12'>Churned Customers</run>
+          </formatted-text>
+        </zone>
+        <zone h='2250' id='35' name='Churn Percentage' show-title='false' w='6071' x='45643' y='7850' />
+        <zone forceUpdate='true' h='1875' id='36' type-v2='text' w='14429' x='44786' y='6000'>
+          <formatted-text>
+            <run bold='true' fontcolor='#75a1c7' fontname='Raleway' fontsize='12'>Churn Percentage</run>
+          </formatted-text>
+        </zone>
+        <zone h='2150' id='37' name='Average Tenure' show-title='false' w='4643' x='67214' y='8000' />
+        <zone forceUpdate='true' h='1875' id='38' type-v2='text' w='11929' x='65000' y='5875'>
+          <formatted-text>
+            <run bold='true' fontcolor='#75a1c7' fontname='Raleway' fontsize='12'>Average Tenure</run>
+          </formatted-text>
+        </zone>
+        <zone h='19000' id='39' name='Churn Count for Each Payment Method and Contract Wise' w='43000' x='1429' y='15950' />
+        <zone h='19150' id='49' name='Churn Count Contract Wise' w='48357' x='50143' y='15850'>
+          <layout-cache minheight='185' type-h='scalable' type-w='fixed' />
+        </zone>
+        <zone h='16100' id='51' name='Churn Distribution based on Citizen Type' w='42857' x='1357' y='59950' />
+        <zone h='15050' id='52' name='Relationship between Total Charges and Tenure' w='43071' x='1286' y='77050' />
+        <zone h='15250' id='53' name='Distribution of Tenure Churn Wise' w='48643' x='50071' y='76900' />
+        <zone h='16000' id='54' name='Distribution of Total Charges Churn Wise' w='48571' x='50000' y='60000' />
+        <zone h='17150' id='55' name='Cohort Comparison of Churn and Payment Method' w='43214' x='1429' y='35800' />
+        <zone forceUpdate='true' h='2550' id='59' type-v2='text' w='70786' x='4857' y='14300'>
+          <formatted-text>
+            <run bold='true' fontcolor='#75a1c7' fontname='Raleway' fontsize='11'>This dashboard aims to help identify key churn patterns and inform retention strategies for telecom customers.</run>
+          </formatted-text>
+        </zone>
+        <zone h='5050' id='66' is-centered='0' is-scaled='1' param='C:/Users/hamza/Desktop/Resume projects Fiverr/Churn Analysis/Image/Screenshot 2025-01-20 080519aaaa.png' type-v2='bitmap' w='53071' x='3000' y='92950' />
+        <zone h='3000' id='50' mode='checkdropdown' name='Churn Count Contract Wise' param='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Contract:nk]' type-v2='filter' values='database' w='11429' x='67357' y='3050' />
+        <zone h='3000' id='43' mode='checkdropdown' name='Churn Count for Each Payment Method and Contract Wise' param='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:PaymentMethod:nk]' type-v2='filter' values='database' w='11429' x='54857' y='3100' />
+        <zone h='17100' id='69' name='Heatmap for Payment Methods and Contracts' w='48571' x='50071' y='35950'>
+          <layout-cache fixed-size-h='164' type-h='fixed' type-w='fixed' />
+        </zone>
+        <zone forceUpdate='true' h='3300' id='75' type-v2='text' w='25929' x='36714' y='11300'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontname='Raleway' fontsize='20'>Drivers of Churn</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontcolor='#75a1c7' fontname='Oswald' fontsize='26'>Æ </run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='1950' id='77' type-v2='text' w='67357' x='25500' y='53950'>
+          <formatted-text>
+            <run bold='true' fontcolor='#4e79a7' fontname='Raleway' fontsize='26'>Customer Churn Patterns and Insights</run>
+          </formatted-text>
+        </zone>
+        <zone fixed-size='69' h='3650' id='44' is-fixed='true' name='Churn Count for Each Payment Method and Contract Wise' pane-specification-id='0' param='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Calculation_1055569177153541:nk]' type-v2='color' w='14357' x='84286' y='6100' />
+        <zone forceUpdate='true' h='3350' id='78' type-v2='text' w='97286' x='1357' y='56450'>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#75a1c7' fontname='Raleway Light' fontsize='16'>This section explores how customer demographics, spending, and tenure influence churn. Insights focus on identifying high-risk segments and behavioral patterns.</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontname='Raleway' fontsize='28'>&lt;Sheet Name&gt;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='3500' minheight='3500' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='92' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='99200' id='91' param='vert' type-v2='layout-flow' w='98858' x='571' y='400'>
+                <zone h='2600' id='7' type-v2='title' w='98858' x='571' y='400'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='96600' id='74' type-v2='text' w='98858' x='571' y='3000'>
+                  <formatted-text>
+                    <run fontcolor='#76b7b2' fontname='Oswald' fontsize='22'>Drivers of Churn</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='1875' id='38' type-v2='text' w='11929' x='65000' y='5875'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#75a1c7' fontname='Raleway' fontsize='12'>Average Tenure</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='2250' id='32' type-v2='text' w='9286' x='2357' y='5950'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#75a1c7' fontname='Raleway' fontsize='12'>Total Customers</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='2050' id='34' type-v2='text' w='10500' x='21071' y='5950'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#75a1c7' fontname='Raleway' fontsize='12'>Churned Customers</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='1875' id='36' type-v2='text' w='14429' x='44786' y='6000'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#75a1c7' fontname='Raleway' fontsize='12'>Churn Percentage</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='45' h='2250' id='35' is-fixed='true' name='Churn Percentage' show-title='false' w='6071' x='45643' y='7850'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='41' h='2050' id='31' is-fixed='true' name='Total Customers' show-title='false' w='4643' x='3214' y='8000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='41' h='2050' id='33' is-fixed='true' name='Churn Customers' show-title='false' w='5357' x='22071' y='8000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='43' h='2150' id='37' is-fixed='true' name='Average Tenure' show-title='false' w='4643' x='67214' y='8000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='3300' id='75' type-v2='text' w='25929' x='36714' y='11300'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontname='Raleway' fontsize='20'>Drivers of Churn</run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run fontalignment='1' fontcolor='#75a1c7' fontname='Oswald' fontsize='26'>Æ </run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='2550' id='59' type-v2='text' w='70786' x='4857' y='14300'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#75a1c7' fontname='Raleway' fontsize='11'>This dashboard aims to help identify key churn patterns and inform retention strategies for telecom customers.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3000' id='50' mode='checkdropdown' name='Churn Count Contract Wise' param='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Contract:nk]' type-v2='filter' values='database' w='11429' x='67357' y='3050'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='19150' id='49' is-fixed='true' name='Churn Count Contract Wise' w='48357' x='50143' y='15850'>
+                  <layout-cache minheight='185' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3000' id='43' mode='checkdropdown' name='Churn Count for Each Payment Method and Contract Wise' param='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:PaymentMethod:nk]' type-v2='filter' values='database' w='11429' x='54857' y='3100'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='19000' id='39' is-fixed='true' name='Churn Count for Each Payment Method and Contract Wise' w='43000' x='1429' y='15950'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='69' h='3650' id='44' name='Churn Count for Each Payment Method and Contract Wise' pane-specification-id='0' param='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Calculation_1055569177153541:nk]' type-v2='color' w='14357' x='84286' y='6100'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='17150' id='55' is-fixed='true' name='Cohort Comparison of Churn and Payment Method' w='43214' x='1429' y='35800'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='17100' id='69' is-fixed='true' name='Heatmap for Payment Methods and Contracts' w='48571' x='50071' y='35950'>
+                  <layout-cache fixed-size-h='164' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='1950' id='77' type-v2='text' w='67357' x='25500' y='53950'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#4e79a7' fontname='Raleway' fontsize='26'>Customer Churn Patterns and Insights</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='3350' id='78' type-v2='text' w='97286' x='1357' y='56450'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#75a1c7' fontname='Raleway Light' fontsize='16'>This section explores how customer demographics, spending, and tenure influence churn. Insights focus on identifying high-risk segments and behavioral patterns.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='16100' id='51' is-fixed='true' name='Churn Distribution based on Citizen Type' w='42857' x='1357' y='59950'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='16000' id='54' is-fixed='true' name='Distribution of Total Charges Churn Wise' w='48571' x='50000' y='60000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='15250' id='53' is-fixed='true' name='Distribution of Tenure Churn Wise' w='48643' x='50071' y='76900'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='15050' id='52' is-fixed='true' name='Relationship between Total Charges and Tenure' w='43071' x='1286' y='77050'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='101' h='5050' id='66' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/hamza/Desktop/Resume projects Fiverr/Churn Analysis/Image/Screenshot 2025-01-20 080519aaaa.png' type-v2='bitmap' w='53071' x='3000' y='92950'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{B6E88552-3B5C-45F1-8DAB-2A1A4B05686F}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='Telecom Churn  Analysis: Insights and Trends'>
+      <viewpoints>
+        <viewpoint name='Average Tenure' />
+        <viewpoint name='Churn Count Contract Wise'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Churn Count for Each Payment Method and Contract Wise'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Churn Customers' />
+        <viewpoint name='Churn Distribution based on Citizen Type'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Churn Percentage' />
+        <viewpoint name='Cohort Comparison of Churn and Payment Method'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Distribution of Tenure Churn Wise'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Distribution of Total Charges Churn Wise'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Heatmap for Payment Methods and Contracts' />
+        <viewpoint name='Relationship between Total Charges and Tenure'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Customers' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{D7A30F67-A571-4D41-8D36-1DFE35D0B70D}' />
+    </window>
+    <window class='worksheet' name='Total Customers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[__tableau_internal_object_id__].[cnt:WA_Fn-UseC_-Telco-Customer-Churn.csv_9CC9DD17CAF5424F8E215B4B8946629E:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>7043</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+      </viewpoint>
+      <simple-id uuid='{0A6CF0F0-A43D-4434-8AD5-1006DAE982EF}' />
+    </window>
+    <window class='worksheet' name='Churn Customers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6C0CB22A-DB1A-4B29-A994-E7DF6435D153}' />
+    </window>
+    <window class='worksheet' name='Churn Percentage'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8142336B-9909-4AF2-8807-4169DCD87780}' />
+    </window>
+    <window class='worksheet' name='Average Tenure'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F6EE7377-0FB6-46F2-A4B9-450DF66F1917}' />
+    </window>
+    <window class='worksheet' name='Churn Count for Each Payment Method and Contract Wise'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checklist' param='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Contract:nk]' type='filter' values='database' />
+            <card mode='checklist' param='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:PaymentMethod:nk]' type='filter' values='database' />
+            <card param='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Calculation_1055569177153541:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Calculation_1055569177153541:nk]</field>
+            <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Churn:nk]</field>
+            <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Contract:nk]</field>
+            <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:PaymentMethod:nk]</field>
+            <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:gender:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{374549B7-B251-4FC8-8837-81878D554F0E}' />
+    </window>
+    <window class='worksheet' name='Churn Count Contract Wise'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Calculation_1055569177153541:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Calculation_1055569177153541:nk]</field>
+            <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Churn:nk]</field>
+            <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Contract:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6F0EA5B3-D041-46B1-A7B1-41957F2770EF}' />
+    </window>
+    <window class='worksheet' name='Churn Distribution based on Citizen Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Calculation_1055569177153541:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Calculation_1055569177153541:nk]</field>
+            <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Churn:nk]</field>
+            <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:gender:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D4799B46-34B2-4F2C-A4B1-7A617A030985}' />
+    </window>
+    <window class='worksheet' name='Relationship between Total Charges and Tenure'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Calculation_1055569177153541:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Calculation_1055569177153541:nk]</field>
+            <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Churn:nk]</field>
+            <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:gender:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9163DDA9-755B-478F-9431-0FD762E586E7}' />
+    </window>
+    <window class='worksheet' name='Distribution of Tenure Churn Wise'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Calculation_1055569177153541:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Calculation_1055569177153541:nk]</field>
+            <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Calculation_1055569187139591:nk]</field>
+            <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Churn:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FF6A2B21-5AB2-459B-9B7B-A4AD05ACB479}' />
+    </window>
+    <window class='worksheet' name='Distribution of Total Charges Churn Wise'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Calculation_1055569177153541:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Calculation_1055569177153541:nk]</field>
+            <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Churn:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{710269B4-FDC6-4A44-B7F4-D717802F9CA8}' />
+    </window>
+    <window class='worksheet' name='Cohort Comparison of Churn and Payment Method'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Churn:nk]</field>
+            <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:PaymentMethod:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4BE8849D-CDFE-4430-85FF-D820D14795C7}' />
+    </window>
+    <window class='worksheet' name='Heatmap for Payment Methods and Contracts'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[usr:Calculation_1055569183719430:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='horizontal'>
+              <node-reference>
+                <fields>
+                  <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:PaymentMethod:nk]</field>
+                </fields>
+                <multibucket>
+                  <bucket>&quot;Electronic check&quot;</bucket>
+                </multibucket>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:Contract:nk]</field>
+            <field>[federated.0leqkj908lqlbm19m0l2d0ye4kcs].[none:PaymentMethod:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B667F3A6-BA07-44D7-86D2-1E0D6B412A5B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Telecom Churn  Analysis: Insights and Trends' width='192'>
+      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
+      RK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
